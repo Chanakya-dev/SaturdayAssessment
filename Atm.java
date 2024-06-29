@@ -3,7 +3,7 @@ package SaturdayAssessment;
 import java.util.Scanner;
 
 public class Atm {
-    private int balance;
+    int balance;
 
     
     public void initBalance(int initialBalance) {
