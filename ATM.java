@@ -7,7 +7,7 @@ public class ATM
         if(balance>=withdrawal) 
             System.out.println("Balnce is more than withdrawl amount");  
         else
-            System.out.println("Insufficient Balance");
+            System.out.println("Insufficien Balance");
 
         return currentbalance;
     }
