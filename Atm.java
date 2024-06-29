@@ -3,26 +3,26 @@ package SaturdayAssessment;
 import java.util.Scanner;
 
 public class Atm {
-    int balance;
+    int b;
 
     
     public void initBalance(int initialBalance) {
-        balance = initialBalance;
+        b = initialBalance;
     }
 
     
-    public void withdraw(int amount) {
-        if (amount > balance) {
+    public void withdraw(int a) {
+        if (a > b) {
             System.out.println("Insufficient balance");
         } else {
-            balance -= amount;
-            System.out.println("Withdrawal successful! Remaining balance: " + balance);
+            b -= a;
+            System.out.println("Withdrawal successful");
         }
     }
 
     
     public int getBalance() {
-        return balance;
+        return b;
     }
 
     public static void main(String[] args) {
@@ -31,12 +31,12 @@ public class Atm {
         
         Atm atm = new Atm();
 
-        System.out.print("Enter initial balance: ");
+        System.out.print("Enter  balance: ");
         int initialBalance = scanner.nextInt();
         atm.initBalance(initialBalance);
 
         
-        System.out.print("Enter withdrawal amount: ");
+        System.out.print("Enter  amount: ");
         int withdrawalAmount = scanner.nextInt();
 
         
